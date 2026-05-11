@@ -28,7 +28,7 @@ The empirical analysis was conducted using the widely benchmarked "Default of Cr
 * **Libraries:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `xgboost`, `imblearn`, `shap`.
 
 ## 💡 Key Findings
-1. **Predictive Superiority:** The XGBoost ensemble model significantly outperformed the traditional baseline, achieving an Area Under the Receiver Operating Characteristic Curve (ROC-AUC) of 0.7712 compared to 0.6908.
+1. **Predictive Superiority:** The XGBoost ensemble model significantly outperformed the traditional baseline, achieving an Area Under the Receiver Operating Characteristic Curve (ROC-AUC) of 0.7712 compared to 0.6908.![ROC curve](Roc curve comparison.jpeg)
 2. **Behavioral Drivers:** SHAP analysis revealed that recent repayment delays (`PAY_0`) serve as the primary catalyst for default predictions. Empirical data show that default rates spike from ~15% to nearly 70% once a client reaches the two-month delinquency threshold.
 3. **Institutional Trust:** Higher extended credit limits (`LIMIT_BAL`) act as robust protective indicators, correlating heavily with a lower propensity to default.
 ## 📈 Practical Implications & Future Work
