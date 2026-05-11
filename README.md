@@ -31,7 +31,17 @@ The empirical analysis was conducted using the widely benchmarked "Default of Cr
 1. **Predictive Superiority:** The XGBoost ensemble model significantly outperformed the traditional baseline, achieving an Area Under the Receiver Operating Characteristic Curve (ROC-AUC) of 0.7712 compared to 0.6908.
 2. **Behavioral Drivers:** SHAP analysis revealed that recent repayment delays (`PAY_0`) serve as the primary catalyst for default predictions. Empirical data show that default rates spike from ~15% to nearly 70% once a client reaches the two-month delinquency threshold.
 3. **Institutional Trust:** Higher extended credit limits (`LIMIT_BAL`) act as robust protective indicators, correlating heavily with a lower propensity to default.
+## 📈 Practical Implications & Future Work
 
+**Practical Implications (Business Applications):**
+* **Proactive Risk Mitigation:** Utilizing XGBoost and SHAP's sensitivity to payment delays to create an "Early Warning System." This allows institutions to trigger pre-emptive interventions, such as personalized payment plans, before severe delinquency occurs.
+* **Dynamic Credit Line Management:** Using the insights from `LIMIT_BAL` to simulate default probabilities under varying credit limits, enabling banks to dynamically adjust credit lines to maximize profitability while bounding risk exposure.
+* **Regulatory Compliance & Fair Lending:** Leveraging SHAP to solve the "black-box" problem. This framework can generate legally compliant "Adverse Action Notices" that cite the exact behavioral metrics that led to a credit denial, thereby proving that decisions are based on objective financial data.
+
+**Future Work:**
+* **Concept Drift Analysis:** Applying the XGBoost-SHAP pipeline to longitudinal datasets to evaluate the temporal stability of SHAP values across macroeconomic shifts (e.g., inflation or changing interest rates).
+* **Alternative Data Integration:** Exploring the integration of unstructured data, such as NLP applied to customer service interactions or geospatial transaction data, to further enhance the AUC.
+* **Deep Learning Benchmarking:** Comparing the predictive efficacy and computational overhead of advanced deep learning architectures tailored for tabular data (like TabNet) against tree-based ensembles.
 ## 🚀 How to Run the Code
 All computational models and exploratory data analyses were executed in Python via Google Colab.
 
