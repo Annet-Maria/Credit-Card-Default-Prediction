@@ -34,11 +34,11 @@ The empirical analysis was conducted using the widely benchmarked "Default of Cr
 ## 📈 Practical Implications & Future Work
 
 **Practical Implications (Business Applications):**
-* **Proactive Risk Mitigation:** By leveraging the predictive power of XGBoost and the interpretability of SHAP, financial institutions can establish an “Early Warning System” to detect customers showing early signs of financial distress, such as repeated payment delays. This enables timely interventions, including personalized repayment plans and customer support strategies, before severe delinquency or default occurs.
+* **Proactive Risk Mitigation:** XGBoost and SHAP can be used to build an “Early Warning System” that identifies customers with increasing payment delays, enabling timely interventions before severe default occurs.
 
-* **Dynamic Credit Line Management:** Insights derived from features such as `LIMIT_BAL` can be used to estimate default probabilities under varying credit limit scenarios. This allows banks to implement dynamic credit line adjustments that optimize profitability while effectively controlling overall risk exposure.
+* **Dynamic Credit Line Management:** Insights from `LIMIT_BAL` help estimate default risk under different credit limits, allowing banks to optimize profitability while managing risk exposure.
 
-* **Regulatory Compliance & Fair Lending:** SHAP improves transparency by addressing the “black-box” nature of advanced machine learning models. The framework can assist in generating legally compliant “Adverse Action Notices” by clearly identifying the financial and behavioral factors that influenced a credit decision, thereby demonstrating that lending outcomes are based on objective and explainable criteria.
+* **Regulatory Compliance & Fair Lending:** SHAP improves model transparency by explaining the key factors behind credit decisions, supporting fair lending practices and legally compliant “Adverse Action Notices.”
   
 **Future Work:**
 * **Concept Drift Analysis:** Applying the XGBoost-SHAP pipeline to longitudinal datasets to evaluate the temporal stability of SHAP values across macroeconomic shifts (e.g., inflation or changing interest rates).
