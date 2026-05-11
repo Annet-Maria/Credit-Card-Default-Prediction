@@ -42,8 +42,11 @@ The empirical analysis was conducted using the widely benchmarked "Default of Cr
   
 **Future Work:**
 * **Concept Drift Analysis:** Applying the XGBoost-SHAP pipeline to longitudinal datasets to evaluate the temporal stability of SHAP values across macroeconomic shifts (e.g., inflation or changing interest rates).
+  
 * **Alternative Data Integration:** Exploring the integration of unstructured data, such as NLP applied to customer service interactions or geospatial transaction data, to further enhance the AUC.
+  
 * **Deep Learning Benchmarking:** Comparing the predictive efficacy and computational overhead of advanced deep learning architectures tailored for tabular data (like TabNet) against tree-based ensembles.
+  
 ## 🚀 How to Run the Code
 All computational models and exploratory data analyses were executed in Python via Google Colab.
 
