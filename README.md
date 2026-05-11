@@ -20,6 +20,7 @@ The empirical analysis was conducted using the widely benchmarked "Default of Cr
 * **Target:** Binary classification (1 = Default, 0 = No Default)
 
 ## 🛠️ Methodology & Tech Stack
+![Methodology Diagram](Group4_Methodology_credit_card_default.png)
 * **Exploratory Data Analysis (EDA):** Feature distribution profiling, correlation heatmaps, and engineered metrics (e.g., Credit Utilization Ratio).
 * **Data Preprocessing:** Standard scaling and application of the **Synthetic Minority Over-sampling Technique (SMOTE)** to combat severe class imbalance in the financial data.
 * **Modeling:** **XGBoost Classifier** (optimized via hyperparameter tuning) compared against a Logistic Regression baseline.
