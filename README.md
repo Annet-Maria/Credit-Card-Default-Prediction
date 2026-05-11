@@ -4,7 +4,7 @@ Credit Card Default Prediction using XGBoost and Explainable AI (SHAP)
 ## 📌 Project Overview
 The accurate prediction of credit card defaults is a critical imperative for modern financial institutions seeking to mitigate risk and optimize capital allocation. While complex machine learning algorithms offer superior predictive capabilities over traditional statistical methods, their "black-box" nature often precludes them from deployment in highly regulated financial environments. 
 
-This project addresses the dual challenges of predictive efficacy and model interpretability by analyzing the UCI Credit Card Default dataset. We evaluate the performance of an advanced ensemble method (XGBoost) against a traditional baseline (Logistic Regression) and utilize SHapley Additive exPlanations (SHAP) to ensure algorithmic transparency and extract localized decision boundaries.
+This project addresses the dual challenges of predictive performance and model interpretability through an analysis of the UCI Credit Card Default dataset. The study compares the effectiveness of an advanced ensemble learning technique, XGBoost, with a traditional baseline model, Logistic Regression. Furthermore, SHapley Additive exPlanations (SHAP) are employed to enhance model transparency by interpreting feature contributions and identifying localized decision boundaries.
 
 ## 👥 Research Team
 * **Annet Maria Cyriac** -  Predictive Modeling, Explainability & Repository Management
@@ -34,10 +34,12 @@ The empirical analysis was conducted using the widely benchmarked "Default of Cr
 ## 📈 Practical Implications & Future Work
 
 **Practical Implications (Business Applications):**
-* **Proactive Risk Mitigation:** Utilizing XGBoost and SHAP's sensitivity to payment delays to create an "Early Warning System." This allows institutions to trigger pre-emptive interventions, such as personalized payment plans, before severe delinquency occurs.
-* **Dynamic Credit Line Management:** Using the insights from `LIMIT_BAL` to simulate default probabilities under varying credit limits, enabling banks to dynamically adjust credit lines to maximize profitability while bounding risk exposure.
-* **Regulatory Compliance & Fair Lending:** Leveraging SHAP to solve the "black-box" problem. This framework can generate legally compliant "Adverse Action Notices" that cite the exact behavioral metrics that led to a credit denial, thereby proving that decisions are based on objective financial data.
+* **Proactive Risk Mitigation:** By leveraging the predictive power of XGBoost and the interpretability of SHAP, financial institutions can establish an “Early Warning System” to detect customers showing early signs of financial distress, such as repeated payment delays. This enables timely interventions, including personalized repayment plans and customer support strategies, before severe delinquency or default occurs.
 
+* **Dynamic Credit Line Management:** Insights derived from features such as `LIMIT_BAL` can be used to estimate default probabilities under varying credit limit scenarios. This allows banks to implement dynamic credit line adjustments that optimize profitability while effectively controlling overall risk exposure.
+
+* **Regulatory Compliance & Fair Lending:** SHAP improves transparency by addressing the “black-box” nature of advanced machine learning models. The framework can assist in generating legally compliant “Adverse Action Notices” by clearly identifying the financial and behavioral factors that influenced a credit decision, thereby demonstrating that lending outcomes are based on objective and explainable criteria.
+  
 **Future Work:**
 * **Concept Drift Analysis:** Applying the XGBoost-SHAP pipeline to longitudinal datasets to evaluate the temporal stability of SHAP values across macroeconomic shifts (e.g., inflation or changing interest rates).
 * **Alternative Data Integration:** Exploring the integration of unstructured data, such as NLP applied to customer service interactions or geospatial transaction data, to further enhance the AUC.
